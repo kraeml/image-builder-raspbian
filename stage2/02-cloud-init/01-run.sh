@@ -17,5 +17,5 @@ if [ ! -f /var/lib/cloud/seed/nocloud-net/meta-data ]
 then
   ln -s /boot/meta-data /var/lib/cloud/seed/nocloud-net/meta-data
 fi
-sed -i "s/name: pi$/name: $FIRST_USER_NAME/g" /etc/cloud/cloud.cfg
+sed -i "s/name: pi$/name: ${FIRST_USER_NAME}/g" /etc/cloud/cloud.cfg
 EOF
