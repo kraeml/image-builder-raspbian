@@ -115,7 +115,7 @@ Vagrant.configure("2") do |config|
     echo "Remove not needed packages"
     export DEBIAN_FRONTEND=noninteractive
     apt-get autoremove --yes  >/dev/null
-    echo "Install base packages not in bentu/ubuntu-19.04"
+    echo "Install base packages not in bento/ubuntu-19.04"
     apt-get install --yes bash-completion git-core vim >/dev/null
 
     #dependencies for pi-gen build.sh
