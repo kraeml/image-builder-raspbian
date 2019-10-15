@@ -24,9 +24,9 @@ run vagrant destroy --force && vagrant up
     * [x] cloud-init
   * [x] Provide releases
 * CircleCI (removed by kraeml)
-  * [x] Build SD card image
-  * [x] Test SD card image
-  * [x] Provide build artifacts
+  * [] Build SD card image
+  * [] Test SD card image
+  * [] Provide build artifacts
 
 CircleCI not working yet. Because you have to use ubuntu 18.04 or better 19.04
 
