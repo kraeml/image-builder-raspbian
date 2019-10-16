@@ -156,13 +156,8 @@ Vagrant.configure("2") do |config|
     apt-get install --yes --quiet docker-ce docker-ce-cli containerd.io \
         docker-compose >/dev/null
     usermod -aG docker vagrant
-    docker run hello-world
-    #usermod -aG docker vagrant
-    #rsync -av /var/lib/docker/volumes /home/vagrant/deploy/
-    #rm -rf /var/lib/docker/volumes/*
-    #mkdir /var/lib/docker/volumes
-    #mount -o bind /home/vagrant/deploy/volumes /var/lib/docker/volumes
-
+    #docker run hello-world
+    
     echo "Setup and start apt-cacher-ng with docker-compose"
     PIGEN_DEPLOY=/home/vagrant/deploy
     rsync --archive --checksum --quiet /vagrant/docker-compose.yml $PIGEN_DEPLOY/
