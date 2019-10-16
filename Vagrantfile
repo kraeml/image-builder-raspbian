@@ -157,7 +157,7 @@ Vagrant.configure("2") do |config|
         docker-compose >/dev/null
     usermod -aG docker vagrant
     #docker run hello-world
-    
+
     echo "Setup and start apt-cacher-ng with docker-compose"
     PIGEN_DEPLOY=/home/vagrant/deploy
     rsync --archive --checksum --quiet /vagrant/docker-compose.yml $PIGEN_DEPLOY/
